@@ -1,0 +1,387 @@
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Comp Podcast</title>
+
+
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300|Rubik:300">
+    <link rel="stylesheet" type="text/css" href="columns.css">
+    <link rel="stylesheet" type="text/css" href="flexbox.css">
+<style>
+html {
+	background: #2b2b40;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Rubik', sans-serif;
+}
+
+a {
+	color: #00a4ca;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+img {
+	max-width: 100%;
+}
+
+h1 strong, h2 strong {
+	font-weight: 10	00;
+}
+
+h1 {
+	font-weight: 300;
+	font-size: 6.5em;
+	margin: 0;
+}
+
+h2 {
+	font-weight: 300;
+	font-size: 4.5em;
+	margin: 0 0 30px 0;
+	line-height: 1.2em;
+}
+
+h3 {
+	margin: 20px 0 10px 0;
+}
+
+h2 a {
+	color: #000;
+}
+
+h2 a:hover {
+		text-decoration: none;
+	}
+
+p, address, ul {
+	font-size: 1.58em;
+	margin-bottom: 20px;
+	font-weight: 300;
+	line-height: 1.6em;
+	font-family: 'Lato', sans-serif;
+}
+.hero {
+	color: #ffffff;
+	text-align: center;
+	height: 100vh;
+	min-height: 550px;
+	background-color: #333;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+
+
+	p {
+		color: #fff;
+	}
+
+	.inner-hero {
+		display: flex;
+		align-items: center;
+		height: 70%;
+	}
+
+	.hero-text-container {
+		width: 700px;
+		text-align: left;
+
+		h1, h2, p, .button {
+			text-shadow: 2px 2px 2px rgba(0,0,0,.85);
+		}
+	}
+
+  .hero-text-right {
+    position: absolute;
+    right: 0;
+  }
+}
+  .hero:before {
+    content: "";
+    background: linear-gradient(to bottom,rgba(0,0,0,.95) 30%,rgba(0, 0, 0, 0) 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+  }
+
+
+.image {
+	text-align: center;
+}
+
+.bottom-cta {
+	text-align: center;
+3
+	h2 {
+		margin-bottom: 12px;
+	}
+}
+
+@media #{$desktop} {
+	.flex {
+		@include flexbox;
+		align-items: center;
+		flex-direction: row;
+
+		.text, .image {
+			-webkit-flex: 1;
+			flex: 1;
+			padding: 0 20px;
+		}
+	}
+
+	.content section:nth-child(even) .flex {
+		flex-direction: row-reverse;
+	}
+}
+.container, .text-container {
+	margin: 0 auto;
+	position: relative;
+	padding: 0 20px;
+}
+
+.text-container {
+	max-width: 750px;
+}
+
+.container {
+	max-width: 1140px;
+}
+
+.dark-logo {
+	display: none;
+}
+
+section {
+	background: #fff;
+}
+
+.pad {
+	padding: 60px 0;
+}
+
+header {
+	color: #fff;
+	padding: 15px 0;
+	position: fixed;
+	width: 100%;
+	z-index: 9999;
+	line-height: 0;
+
+	.container {
+		line-height: 0;
+	}
+
+	a {
+		color: #fff;
+		text-decoration: none;
+		z-index: 1;
+		position: relative;
+		@media #{$mid-point} {
+			height: 100%;
+		}
+		display: block;
+
+		span {
+			display: block;
+			height: 100%;
+		}
+
+	}
+
+		a:hover {
+			text-decoration: none;
+		}
+
+	.company-name {
+		font-size: 1.7em;
+		display: inline-block;
+
+		img {
+			height: 30px;
+			width: auto;
+		}
+	}
+}
+
+	header.header-background {
+		background-color: rgba(255,255,255,.95);
+		color: #333;
+		box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+		transition: background-color 0.2s ease;
+		text-shadow: none;
+
+		a {
+			color: #333;
+			@media #{$mid-point} {
+				&:hover {
+					border-bottom-color: rgba(80, 80, 80,.3);
+					border-bottom-width: 5px;
+				}
+			}
+		}
+
+		.dark-logo {
+			display: inline;
+		}
+
+		.light-logo {
+			display: none;
+		}
+	}
+
+.content {
+	background: #fff;
+}
+
+.info img {
+		max-height: 650px;
+}
+
+.info {
+	padding: 0 0 100px 0;
+
+}
+
+	.info:first-child {
+		padding-top: 100px;
+	}
+
+.subtext {
+	margin-top: 10px;
+}
+
+
+.cta {
+	margin: 25px 0 0 0;
+}
+
+.page h2 {
+	text-align: center;
+}
+
+blockquote {
+	padding: 18px 25px;
+	margin: 0;
+	quotes: "\201C""\201D""\2018""\2019";
+	font-style: italic;
+
+	cite {
+		display: block;
+		font-weight: bold;
+		margin: 10px 0 0 0;
+	}
+
+	p {
+		display: inline;
+	}
+}
+
+blockquote:before {
+	color: #ccc;
+	content: open-quote;
+	font-size: 4em;
+	line-height: 0.1em;
+	margin-right: 0.25em;
+	vertical-align: -0.4em;
+}
+
+.square-image {
+	width: 200px;
+	height: 200px;
+	border-radius: 200px;
+	background-size:cover;
+ 	background-repeat:no-repeat;
+	margin: 0 auto;
+}
+
+.page {
+	margin-bottom: 0;
+	padding-bottom: 80px;
+}
+
+.center-text {
+	text-align: center;
+}
+
+.learn-more {
+	position: absolute;
+	left: 0;
+	bottom: 30px;
+	text-align: center;
+	font-size: 1.4em;
+	width: 100%;
+
+	a {
+		text-decoration: none;
+		color: #fff;
+		opacity: .9;
+
+			}
+a:hover {
+			opacity: 1;
+		}
+
+	.arrow {
+		font-size: .6em;
+	}
+}
+
+.editor-link {
+ 	display: none;
+	margin-top: 0;
+	padding-top: 30px;
+	.btn {
+		border: 0;
+		border-radius: 2px;
+		width: 100%;
+		max-width: 500px;
+		box-sizing: border-box;
+		font-size: 2rem;
+		text-decoration: none;
+		padding: 10px 15px;
+		margin: 0;
+		font-size: 18px;
+		cursor: pointer;
+		background-color: #f7e064;
+		color: #333;
+		box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.2);
+
+	}
+
+		.btn:hover {
+			background-color: #f4d525;
+			color: #333;
+		}
+
+}
+
+.cms-editor-active .editor-link {
+	display: block;
+}
+</style>
+</head>
+	<body>
+  <section class="hero" style="background-image: url(IMG_0329.JPG)" style="height:100%">
+	<div class="inner-hero text-container" style="top: 10%;">
+		<div class="hero-text-container">
+			<h1 class="editable"><b>Em Breve</b></h1>
+			<p class="subtext editable"><b>O primeiro Podcast a levar a ciência da computação até você.</b></p>
+			<div class="cta button alt"><a href="https://twitter.com/computacaocast"><b>Siga no twitter!</b></a></div>
+		</div>
+	</div>
+  </section>
+  </body>
+</html>
