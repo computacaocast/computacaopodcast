@@ -1,2 +1,2 @@
 User-Agent: *
-Sitemap: https://computacaopodcast.com.br/feed.xml
+Sitemap: https://computacaopodcast.com.br/sitemap.xml
