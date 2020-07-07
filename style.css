@@ -228,7 +228,7 @@ header .intro-text .skills {
     left: 0;
     z-index: 9999;
     width: 100vw;
-    height: 70px;
+    height: 60px;
 }
 
 .navbar a:focus {
