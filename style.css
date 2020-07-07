@@ -105,8 +105,8 @@ header .btn {
     font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
-    font-size: 1.1em;
-    width: 80%;
+    font-size: 0.9em;
+    width: 90%;
 }
 
 header .btn-blue {
@@ -134,10 +134,10 @@ header img {
 
 header video { 
     position: absolute;
-    margin-top: 40%;
+    margin-top: 70%;
     margin-left: 0%;
-    width: 120%;
-    height: 120%;
+    width: 130%;
+    height: 130%;
     z-index: -100;
     transform: translateX(-50%) translateY(-50%);
     background: url('') no-repeat;
@@ -146,7 +146,7 @@ header video {
 }
 
 header .intro-text {
-  margin-top: 45%;
+  margin-top: 85%;
   margin-left: 1%;
   width:60%;
 }
