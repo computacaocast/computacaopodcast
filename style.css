@@ -12,8 +12,9 @@
  */
 
 body {
-    overflow-x: hidden;
-    background: rgba(0,0,0)
+    background: rgba(0,0,0);
+    overflow-x:hidden;
+    margin:0; padding:0;
 }
 
 p {
@@ -92,6 +93,7 @@ header {
   text-align: left;
   color: #fff;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 40%, #002EF3 100%);
+  max-width:100%;
 }
 
 header .container {
@@ -112,8 +114,6 @@ header .btn {
 header .btn-blue {
   background-color: #002EF3;
 }
-
-
 
 header .chamada {
   font-family: Cartograph CF;
@@ -193,6 +193,7 @@ header .intro-text .skills {
 }
 
 @media(min-width:768px) {
+    
     .navbar-fixed-top {
         padding: 25px 0;
         -webkit-transition: padding .3s;
@@ -221,6 +222,13 @@ header .intro-text .skills {
     font-family: Cartograph CF;
     font-style: italic;
     font-weight: 700;
+    max-width:100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100vw;
+    height: 70px;
 }
 
 .navbar a:focus {
