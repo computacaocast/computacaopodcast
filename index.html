@@ -393,32 +393,5 @@
 
     
 
-    <script>
-      $(document).ready(function(){
-        if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-          // device detection
-          if(!$.cookie('compcast')) {
-            //no cookie
-            setTimeout(function() { $("#subscribe").modal('show'); }, 6000);
-            $.cookie( 'compcast', '1', { expires: 30 });
-          } else {
-          }
-          $("#submitemail").click(function(e) {
-            e.preventDefault();
-            $.ajax({
-              type: "GET",
-              url: "https://cloud.lmcad.ic.unicamp.br/saveEmail?email="+$('#emailsubmit').val(),
-              success: function(result) {
-                $("#subscribe").modal('hide'); 
-              },
-              error: function(result) {
-                $("#subscribe").modal('hide'); 
-              }
-            });
-          });
-        }
-      });
-    </script>
-
     </body>
 </html>
